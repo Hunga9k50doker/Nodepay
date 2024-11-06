@@ -155,7 +155,7 @@ async def ping(proxy, token):
         if(RETRIES == 0):
             logger.info(f"{Fore.BLUE}Đang thử kết nối lại với proxy {proxyIP}")
             RETRIES += 1
-            start_ping(proxy, token)
+            await start_ping(proxy, token)
         else:
             RETRIES = 0
             handle_ping_fail(proxy, None)
