@@ -1,0 +1,5 @@
+cloudscraper
+aiohttp
+loguru
+requests
+colorama
